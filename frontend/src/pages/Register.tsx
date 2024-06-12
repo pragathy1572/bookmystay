@@ -96,7 +96,7 @@ export default function Register() {
                         validate: (val) => {
                             if(!val) {
                                 return "This field is required"
-                            } else if(watch("password") !== val) {
+                            } else if(watch("password") !== val) { // watch gets the value of different field
                                 return "Your passwords do not match"
                             }
                         }, 
